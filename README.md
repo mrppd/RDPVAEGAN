@@ -32,7 +32,7 @@ pip install torch opacus numpy pandas scikit-learn matplotlib tqdm
 
 ## 1) Kaggle Cardiovascular Disease
 
-- Place the CSV at, e.g., `./cardio_train.csv`. Some distributions use semicolon `;` separators.
+- Place the CSV at, e.g., `./cardio_train.csv`. 
 - **Required target column:** `cardio` (0/1).
 - The script will:
   - engineer `bmi` and `pp` (pulse pressure) features,
