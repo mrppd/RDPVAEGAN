@@ -4,14 +4,7 @@ Created on Wed Jul 5 05:34:44 2023
 
 @author: pronaya
 
-
 # RDP-VAEGAN for Sepsis with 1D-CNN + Opacus DP and RDP composition.
-# - Loads .psv files recursively with progress bar
-# - Fixed T hours per patient (default 24)
-# - Imputation: forward fill (per patient) then global per-variable median
-# - Scaling: z-score per variable across all patients x time
-# - Stages: A) DP VAE (Conv1d), B) DP-GAN (DP discriminator, non-DP generator), C) DP labeler (Conv1d)
-# - RDP composition: infer noise from each stage's reported ε, given sample rate & steps; compose via compute_rdp
 """
 
 import os, glob, math, random, argparse
@@ -612,3 +605,4 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
+
