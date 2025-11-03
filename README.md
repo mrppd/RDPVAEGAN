@@ -17,7 +17,7 @@ The scripts implement a **three-stage** synthetic data generator, based **Rényi
 
 ## Requirements
 
-- Python ≥ 3.9 (tested on 3.11 / 3.12)  
+- Python ≥ 3.9
 - PyTorch  
 - Opacus  
 - NumPy, pandas, scikit-learn (for evaluation), matplotlib, tqdm
