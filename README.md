@@ -4,7 +4,7 @@ This repo contains end-to-end scripts to generate differentially private synthet
 
 ## What the pipeline does
 
-The scripts implement a **three-stage** synthetic data generator, based **Rényi Differential Privacy** (RDP) and composed at the end:
+The scripts implement a **three-stage** synthetic data generator, based on **Rényi Differential Privacy** (RDP):
 
 1. **Stage A — DP-VAE (Conv1d)**  
    Learns a low-dimensional representation and a **decoder** that maps latent noise → feature space. Uses **Opacus** for DP-SGD on the VAE.
